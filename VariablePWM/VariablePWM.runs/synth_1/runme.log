@@ -1,0 +1,358 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 51608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 851.418 ; gain = 233.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/top.vhd:44]
+INFO: [Synth 8-3491] module 'DutyReg' declared at 'D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/DutyReg.vhd:35' bound to instance 'REG' of component 'DutyReg' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/top.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'DutyReg' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/DutyReg.vhd:44]
+INFO: [Synth 8-3491] module 'BCD_8bit' declared at 'D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/BCD_8bit.vhd:35' bound to instance 'BCDGEN' of component 'BCD_8bit' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/DutyReg.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'BCD_8bit' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/BCD_8bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'BCD_8bit' (1#1) [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/BCD_8bit.vhd:40]
+WARNING: [Synth 8-614] signal 'Duty' is read in the process but is not in the sensitivity list [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/DutyReg.vhd:65]
+WARNING: [Synth 8-614] signal 'BCD' is read in the process but is not in the sensitivity list [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/DutyReg.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'DutyReg' (2#1) [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/DutyReg.vhd:44]
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/Seven_Seg.vhd:36' bound to instance 'SSD' of component 'Seven_Seg' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/top.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/Seven_Seg.vhd:48]
+INFO: [Synth 8-226] default block is never used [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/Seven_Seg.vhd:70]
+WARNING: [Synth 8-614] signal 'seltype' is read in the process but is not in the sensitivity list [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/Seven_Seg.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (3#1) [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/Seven_Seg.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/new/top.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 924.488 ; gain = 306.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 924.488 ; gain = 306.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 924.488 ; gain = 306.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 924.488 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/constrs_1/imports/CPP-VR-Project/Nexys A7-100T.xdc]
+Finished Parsing XDC File [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/constrs_1/imports/CPP-VR-Project/Nexys A7-100T.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/constrs_1/imports/CPP-VR-Project/Nexys A7-100T.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1018.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1018.930 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1018.930 ; gain = 401.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1018.930 ; gain = 401.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1018.930 ; gain = 401.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ps_reg' in module 'DutyReg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ps_reg' using encoding 'sequential' in module 'DutyReg'
+WARNING: [Synth 8-327] inferring latch for variable 'dout_out_reg' [D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.srcs/sources_1/imports/new/Seven_Seg.vhd:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1018.930 ; gain = 401.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 9     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BCD_8bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 9     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+Module DutyReg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module Seven_Seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1018.930 ; gain = 401.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|Seven_Seg   | SSD_out     | 32x7          | LUT            | 
+|top         | SSD/SSD_out | 32x7          | LUT            | 
++------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1018.930 ; gain = 401.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1029.074 ; gain = 411.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1030.656 ; gain = 413.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |    11|
+|5     |LUT3   |     5|
+|6     |LUT4   |    13|
+|7     |LUT5   |    16|
+|8     |LUT6   |    33|
+|9     |FDRE   |    31|
+|10    |LD     |     6|
+|11    |IBUF   |     5|
+|12    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   146|
+|2     |  REG    |DutyReg   |    76|
+|3     |  SSD    |Seven_Seg |    48|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1036.449 ; gain = 324.469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.449 ; gain = 418.910
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1046.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1049.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1049.109 ; gain = 744.020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1049.109 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Sander/Documents/GitHub/CPP-VR-Project/VariablePWM/VariablePWM.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 16:31:22 2021...

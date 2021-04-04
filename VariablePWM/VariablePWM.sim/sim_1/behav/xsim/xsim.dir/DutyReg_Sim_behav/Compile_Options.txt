@@ -1,0 +1,1 @@
+-wto "34e91b11161f4dea90f795cc11e87fae" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "DutyReg_Sim_behav" "xil_defaultlib.DutyReg_Sim" -log "elaborate.log" 
