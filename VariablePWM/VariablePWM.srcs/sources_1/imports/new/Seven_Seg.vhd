@@ -72,7 +72,7 @@ begin
                       dout_out <= '1' & BCDO(3 downto 0) & '1';  
         when "001" => E <= "00000010";
                       dout_out <= '1' & BCDT(3 downto 0) & '1';      
-        when "010" => E <= "00000000";
+        when "010" => E <= "00000100";
                       dout_out <= '1' & b"00" & BCDH(1 downto 0) & '1';      
         when "011" => E <= "00000000";
                       dout_out <= '0' & "0000" & '0';      
